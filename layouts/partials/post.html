@@ -1,0 +1,12 @@
+<post>
+    <a class="wrapper" href="{{ .RelPermalink }}">
+        <img src="{{ .Page.Params.cover }}">
+    </a>
+    <div class="details">
+        <a href="/tags/{{ index .Page.Params.tags 0 | urlize }}" class="tag">{{ index .Page.Params.tags 0 }}</a>
+        <p class="date">• {{ .Date.Format "Jan 2, 2006" }}</p>
+    </div>
+    <h2 class="title"><a href="{{ .RelPermalink }}">{{ .Page.Params.title }}</a></h2>
+    <p class="summary">{{ .Summary | truncate 400 }}</p>
+    <p class="authors">By <a href="/authors/{{ .Page.Params.author | urlize }}">{{ .Page.Params.author }}</a></p>
+</post>

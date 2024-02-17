@@ -1,0 +1,31 @@
+<header>
+    <a class="logo"><img src="https://danto-jekyll.netlify.app/images/logo-dark.svg" alt="logo"></a>
+    <ul id="menu-items">
+        <li><a href="">Home</a></li>
+        <li><a href="">Latest</a></li>
+        <li><a href="">Authors</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+    <a href="" class="cta">Get in touch</a>
+    <div id="menu"><i class="hamburger"></i></div>
+    <script>
+        const menu = document.querySelector('#menu')
+        const icon = menu.querySelector('i')
+        const menuItems = document.querySelector('#menu-items')
+    
+        const switchIcon = () => {
+            if (icon.classList.contains('hamburger')) {
+                icon.classList.remove('hamburger')
+                icon.classList.add('cross')
+            } else {
+                icon.classList.add('hamburger')
+                icon.classList.remove('cross')
+            }
+        }
+    
+        menu.addEventListener('click', () => {
+            menuItems.classList.toggle('visible')
+            switchIcon()
+        })
+    </script>
+</header>

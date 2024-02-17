@@ -1,0 +1,34 @@
+/* 
+    Lifted from the Danto Jeckyll theme 
+    'https://danto-jekyll.netlify.app/' 
+*/
+:root {
+    --primary-color: #fbdab1;
+    --white: #fff;
+    --light-gray: #f5f5f5;
+    --gray: #9a9a9a;
+    --dark: #2a2b2d;
+    --dark-blue: #181818;
+    
+    --background-color: var(--dark-blue);
+    --background-alt-color: var(--dark);
+    --background-alt-color-2: #262729;
+    --text-font-color: var(--gray);
+    --text-alt-font-color: var(--gray);
+    --heading-font-color: var(--light-gray);
+    --link-color: var(--light-gray);
+    --link-color-hover: var(--light-gray);
+    --button-color: var(--dark);
+    --button-background-color: var(--primary-color);
+    --button-background-hover: #d3b795;
+    --border-color: #333;
+    --border-alt-color: #333;
+    --th-color: var(--dark);
+    --tr-color: var(--dark);
+    --syntax-highlighting-background: var(--dark);
+
+    --font-heading: "Noto Serif", serif;
+    --font-text: "Poppins", sans-serif;
+    --border-radius: 16px;
+    --layout-gap: 32px
+}

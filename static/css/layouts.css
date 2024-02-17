@@ -1,0 +1,138 @@
+/* Homepage Headline */
+
+hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    max-width: 800px;
+}
+hero p {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+/* DANTO 3 Posts Layout */
+
+.three-posts-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--layout-gap);
+}
+
+@media screen and (max-width: 1200px) {
+    .three-posts-layout {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .three-posts-layout post:nth-child(3) {
+        grid-column: span 2;
+    }
+    .three-posts-layout post:nth-child(3) .summary {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .three-posts-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .three-posts-layout post:nth-child(3) {
+        grid-column: span 1;
+    }
+    .three-posts-layout post:nth-child(3) .summary {
+        display: none;
+    }
+}
+
+
+/* DANTO 5 Posts Layout */
+
+
+.five-posts-layout {
+    display: grid;
+    grid-template-columns: .5fr 1fr .5fr;
+    gap: var(--layout-gap);
+}
+
+.five-posts-layout .three-part:nth-child(2) post .summary {
+    display: block;
+}
+
+.five-posts-layout .three-part:nth-child(1),
+.five-posts-layout .three-part:nth-child(3) {
+    display: grid;
+    gap: var(--layout-gap);
+}
+
+@media screen and (max-width: 1200px) {
+    .five-posts-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .five-posts-layout .three-part:nth-child(1),
+    .five-posts-layout .three-part:nth-child(3) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .five-posts-layout .three-part:nth-child(1),
+    .five-posts-layout .three-part:nth-child(3) {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .five-posts-layout .three-part:nth-child(2) post .summary {
+        display: none;
+    }
+}
+
+/* DANTO posts lists layout */
+.list-posts-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--layout-gap);
+}
+
+@media screen and (max-width: 1200px) {
+    .list-posts-layout {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .list-posts-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* DANTO Page Container Styles */
+.container {
+    margin: 0 auto;
+}
+.container {
+    max-width: 1332px;
+    padding-left: 36px;
+    padding-right: 36px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1000px;
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+}
+@media (max-width: 800px) {
+    .container {
+        max-width: 560px;
+    }
+}
+

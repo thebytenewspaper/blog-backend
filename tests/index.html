@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive 3 Column Layout</title>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    
+
+  post {
+    display: block;
+    border: 1px solid #ccc;
+    padding: 20px;
+    height: 100%;
+  }
+
+  
+
+
+  .blog-card {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.blog-card:hover .blog-image-container {
+    transform: translateY(-5px);
+}
+
+.blog-image-container {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.blog-image-container img {
+    width: 100%;
+    display: block;
+}
+
+.blog-details {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.blog-tag {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.blog-date {
+    font-size: 12px;
+    color: #666;
+}
+
+.blog-title {
+    padding: 10px;
+    font-size: 18px;
+    transition: text-decoration 0.3s ease;
+}
+
+.blog-title:hover {
+    text-decoration: underline;
+}
+
+.blog-credit {
+    padding: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+</style>
+</head>
+<body>
+
+    
+    <div class="five-posts-layout">
+        <div class="three-part">
+            <post>Post 1</post>
+            <post>Post 2</post>
+        </div>
+        <div class="three-part">
+            <post>Post 3 (Biggest)</post> 
+        </div>
+        <div class="three-part">
+            <post>Post 4</post>
+            <post>Post 5</post>
+        </div>
+        
+    </div>
+    
+    <div class="three-posts-layout" style="margin-top: 2rem;">
+      <post>Post 1</post>
+      <post>Post 2</post>
+      <post>Post 3</post>
+    </div>
+
+    <div class="blog-card">
+        <div class="blog-image-container">
+            <img src="https://via.placeholder.com/300" alt="Blog Post Image">
+        </div>
+        <div class="blog-details">
+            <div class="blog-tag">Technology</div>
+            <div class="blog-date">Feb 17, 2024</div>
+        </div>
+        <h2 class="blog-title">Lorem ipsum dolor sit amet</h2>
+        <div class="blog-credit">By John Doe</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,145 @@
+header {
+    display: flex;
+    align-items: center;
+    padding: 2rem 26px;
+    margin-bottom: 2rem;
+    position: relative;
+}
+header .logo {
+    margin-right: 1rem;
+}
+header img {
+    height: 2rem;
+}
+header ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+}
+header ul li {
+    display: inline-block;
+}
+header ul li a {
+    text-decoration: none;
+    font-family: var(--font-text);
+    font-weight: 500;
+    margin: .5em;
+    font-size: 16px;
+}
+header ul li a:hover, header ul li a:active {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
+header .cta {
+    margin-left: auto;
+    background-color: var(--primary-color);
+    color: var(--dark);
+    padding: 8px 18px;
+    line-height: 1.6;
+    font-weight: 500;
+    font-family: var(--font-text);
+    text-decoration: none;
+    border-radius: 60px;
+    transition: .2s;
+    font-size: 16px;
+}
+header .cta:hover, header .cta:active {
+    opacity: .8;
+}
+
+#menu {
+    display: none;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+/* Hamburger */
+.hamburger {
+    width: 30px;
+    height: 2px;
+    background-color: var(--white);
+    position: relative;
+    display: block;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background-color: var(--white);
+    position: absolute;
+    top: -8px;
+    transition: transform 0.3s ease;
+}
+
+.hamburger::after {
+    top: 8px;
+}
+
+/* Cross */
+.cross {
+    width: 30px;
+    height: 2px;
+    background-color: transparent;
+    position: relative;
+    display: block;
+}
+
+.cross::before,
+.cross::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background-color: var(--white);
+    position: absolute;
+    top: 0;
+    transition: transform 0.3s ease;
+}
+
+.cross::before {
+    transform: rotate(45deg);
+}
+
+.cross::after {
+    transform: rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+    #menu {
+        display: flex;
+    }
+    header ul {
+        position: absolute;
+        background-color: var(--background-alt-color);
+        border-radius: var(--border-radius);
+        flex-direction: column;
+        padding: 1rem;
+        text-align: right;
+        top: 4rem;
+        right: 26px;
+        z-index: 90;
+        display: none;
+    }
+    header ul li {
+        margin: 4px 0;
+    }
+    header .cta {
+        display: none;
+    }
+    header i {
+        margin-left: auto;
+        font-size: 26px;
+        font-weight: bold;
+        color: var(--white)
+    }
+}
+
+.visible {
+    display: flex !important;
+}

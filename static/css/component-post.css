@@ -1,0 +1,90 @@
+/* 
+<post>
+    <img src="{{ .Page.Params.cover }}" alt="Blog Post Image">
+    <div class="details">
+        <a class="tag">Technology</a>
+        <p class="date">Feb 17, 2024</p>
+    </div>
+    <h2 class="title">Lorem ipsum dolor sit amet</h2>
+    <p class="authors">By <a>John Doe</a></p>
+</post> 
+*/
+
+post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+post h2 {
+    margin: 16px 0;
+    font-size: 22px;
+    cursor: pointer;
+}
+post h2:hover, post h2:active {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
+post .authors {
+    font-size: 14px;
+}
+post .summary {
+    display: none;
+}
+post .details {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px !important;
+    align-items: center;
+    margin-top: 26px;
+}
+post .details p {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: 500;
+}
+post .details .tag {
+    padding: 6px 16px;
+    text-transform: capitalize;
+    border-radius: 60px;
+    background-color: var(--background-alt-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: .5em;
+}
+post a {
+    margin: 0;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+post .details .date {
+    font-size: 12px;
+    color: #666;
+}
+post .wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+post .wrapper::before {
+    content: "";
+    display: block;
+    padding-top: 66.67%; /* aspect ratio */
+}
+
+post img {
+    /* border-radius: none !important; */
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+post img:hover {
+    transform: translateY(-5px); /* Move the image upward by 5 pixels on hover */
+}

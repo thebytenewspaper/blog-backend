@@ -1,4 +1,11 @@
 baseURL = 'https://thebytenewspaper.github.io/'
 languageCode = 'en-us'
 title = 'The Byte'
-theme = 'hugo-theme-itheme'
+
+[params]
+defaultImage = "/images/default.jpg"
+homepageHeadline = "One Stop Daily News, Article, Inspiration, and Tips."
+homepageSubheadline = "Features productivity, tips, inspiration and strategies for massive profits. Find out how to set up a successful blog or how to make yours even better!"
+
+instagramUrl = ""
+email = ""

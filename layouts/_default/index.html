@@ -1,0 +1,37 @@
+{{ define "main" }}
+  <main class="container">
+    <hero class="headline">
+      <h1>{{ .Site.Params.homepageHeadline }}</h1>
+      <p>{{ .Site.Params.homepageSubheadline }}</p>
+    </hero>
+    <div class="five-posts-layout">
+      {{ $posts := where .Site.RegularPages "Type" "posts"}}
+
+      <div class="three-part">
+        {{ partial "post" (index $posts 0) }}
+        {{ partial "post" (index $posts 1) }}
+      </div>
+      <div class="three-part">
+        {{ partial "post" (index $posts 2) }}
+      </div>
+      <div class="three-part">
+        {{ partial "post" (index $posts 3) }}
+        {{ partial "post" (index $posts 4) }}
+      </div>
+    </div>
+    {{ range $tag, $posts := .Site.Taxonomies.tags }}
+      <div class="category-section">
+        <hr>
+        <section>
+          <h2>{{ $tag | humanize }}</h2>
+          <a href="/tags/{{ $tag | urlize }}">View all <i class="ion-md-arrow-dropright"></i></a>
+        </section>
+        <div class="three-posts-layout">
+          {{ range first 3 $posts }}
+              {{ partial "post" .Page}}
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+  </main>
+{{ end }}

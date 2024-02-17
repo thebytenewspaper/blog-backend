@@ -1,0 +1,17 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 1rem;
+    background-color: var(--background-alt-color-2);
+    margin-top: 1.4rem;
+}
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+footer .group a {
+    font-size: 26px;
+    margin: 0 8px;
+}

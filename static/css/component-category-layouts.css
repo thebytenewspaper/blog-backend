@@ -1,0 +1,26 @@
+.category-section section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 4rem;
+    align-items: center;
+}
+.category-section section h2 {
+    text-transform: capitalize;
+}
+.category-section section a {
+    margin-left: auto;
+    background-color: var(--primary-color);
+    color: var(--dark);
+    padding: 8px 18px;
+    line-height: 1.6;
+    font-weight: 500;
+    font-family: var(--font-text);
+    text-decoration: none;
+    border-radius: 60px;
+    transition: .2s;
+    font-size: 16px;
+}
+.category-section section a:hover, .category-section section a:active {
+    opacity: .8;
+}

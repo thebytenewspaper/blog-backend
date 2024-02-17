@@ -1,0 +1,165 @@
+body {
+    background-color: var(--background-color);
+    color: var(--text-font-color);
+    font-family: var(--font-text);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    user-select: none;
+    border-radius: var(--border-radius);
+}
+
+/*               */
+/* TEXT ELEMENTS */
+/*               */
+
+p {
+    font-family: var(--font-text);
+    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+strong {
+    font-weight: bold;
+}
+em {
+    color: var(--primary-color);
+    font-style: italic;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    border: 0;
+    background-color: var(--border-color)
+}
+
+@media(max-width: 576px) {
+    hr {
+        margin: 48px 0
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: normal;
+    color: var(--heading-font-color);
+    margin-top: 20px;
+}
+
+h1, h2, h3, h4, h5, h6, ul, ol, dl, blockquote, p, address, hr, table, fieldset, figure, pre {
+    margin-bottom: 32px
+}
+
+ul, ol, dd {
+    margin-left: 16px
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
+a:hover, a:active {
+    color: var(--primary-color)
+}
+
+h1 { font-size: 36px }
+h2 { font-size: 28px }
+h3 { font-size: 24px }
+h4 { font-size: 20px }
+h5 { font-size: 18px }
+h6 { font-size: 16px }
+
+pre {
+    overflow: auto;
+    padding: 15px;
+    font-size: 14px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+    color: var(--heading-font-color);
+    background-color: var(--dark) !important;
+    border-radius: var(--border-radius);
+    white-space: pre;
+}
+code {
+    font-family: monospace;
+    font-size: 1em
+}
+
+/*                   */
+/* SCROLL BAR STYLES */
+/*                   */
+::-webkit-scrollbar {
+    width: 10px;
+    cursor: pointer;
+}
+::-webkit-scrollbar-track {
+    background: var(--dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--light-gray);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+
+/* from DANTO */
+/* BLOCKQUOTE */
+/*            */
+
+blockquote {
+    position: relative;
+    margin: 48px 0;
+    padding-left: 32px;
+    font-family: "Noto Serif", "Times New Roman", Georgia, serif;
+    font-size: 30px;
+    line-height: 1.6;
+    font-style: italic;
+    border-left: 4px solid var(--primary-color);
+    color: var(--heading-font-color)
+}
+
+blockquote p {
+    margin-bottom: 0
+}
+
+blockquote cite {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--heading-font-color)
+}
+
+@media(max-width: 1400px) {
+    blockquote {
+        margin: 40px 0;
+        font-size: 28px
+    }
+}
+
+@media(max-width: 768px) {
+    blockquote {
+        font-size: 22px
+    }
+}
+
+@media(max-width: 576px) {
+    blockquote {
+        margin: 32px 0;
+        padding-left: 20px;
+        font-size: 20px
+    }
+}
