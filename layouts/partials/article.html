@@ -1,0 +1,61 @@
+<section class="article">
+    <div class="article-header">
+        <div class="post-details">
+            <a href="/tags/{{ index .Page.Params.tags 0 | urlize }}" class="tag">{{ index .Page.Params.tags 0 }}</a>
+            <p class="date">• {{ .Date.Format "Jan 2, 2006" }}</p>
+        </div>
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Params.description | truncate 250 }}</p>
+    </div>
+    <img class="cover-image" src="{{ .Page.Params.cover }}" alt="Cover Image">
+    <article class="article-content">
+        {{ .Content }}
+
+        <hr>
+
+        like
+
+        <hr>
+        <!-- Get Author Page and display Author Bio -->
+        {{ $currentPost := . }}
+        {{ $authorName := $currentPost.Params.author }}
+        {{ $authorPath := printf "authors/%s.md" (urlize $authorName) }}
+
+        {{ with .Site.GetPage $authorPath }}
+            {{ if . }}
+                {{ partial "author" (dict "Site" .Site "Page" .) }}
+            {{ end }}
+        {{ end }}
+
+        <!-- Display Related Category Posts -->
+        {{ $posts := where .Site.RegularPages "Type" "posts" }}
+        {{ $firstTag := index .Params.tags 0 | lower }}
+        {{ $count := 0 }}
+        <hr>
+        <h2 style="text-transform: capitalize">Related</h2>
+        <div class="two-posts-layout">
+            {{ range $posts }}
+                {{ $postTags := .Params.tags }}
+                {{ if and (lt $count 2) (in $postTags $firstTag) }}
+                    {{ partial "post" . }}
+                    {{ $count = add $count 1 }}
+                {{ end }}
+            {{ end }}
+        </div>
+
+        <!-- Display Featured Posts -->
+        {{ $currentTag := "featured" }}
+        {{ $tagPages := index .Site.Taxonomies.tags $currentTag }}
+        {{ if $tagPages }}
+            <hr>
+            <h2>Featured</h2>
+            <div class="two-posts-layout">
+                {{ range first 2 $tagPages.Pages }}
+                    {{ partial "post" .Page }}
+                {{ end }}
+            </div>
+        {{ end }}
+
+    </article>
+    </div>
+</section>

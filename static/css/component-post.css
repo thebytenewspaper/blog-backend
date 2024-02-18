@@ -1,15 +1,3 @@
-/* 
-<post>
-    <img src="{{ .Page.Params.cover }}" alt="Blog Post Image">
-    <div class="details">
-        <a class="tag">Technology</a>
-        <p class="date">Feb 17, 2024</p>
-    </div>
-    <h2 class="title">Lorem ipsum dolor sit amet</h2>
-    <p class="authors">By <a>John Doe</a></p>
-</post> 
-*/
-
 post {
     display: flex;
     flex-direction: column;
@@ -28,23 +16,30 @@ post h2:hover, post h2:active {
 }
 post .authors {
     font-size: 14px;
+    margin: 0;
 }
 post .summary {
     display: none;
+    margin: 8px 0;
 }
-post .details {
+post a, .post-details {
+    margin: 0;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+.post-details {
     display: flex;
     flex-direction: row;
     font-size: 14px !important;
     align-items: center;
     margin-top: 26px;
 }
-post .details p {
+.post-details p {
     margin-top: auto;
     margin-bottom: auto;
     font-weight: 500;
 }
-post .details .tag {
+.post-details .tag {
     padding: 6px 16px;
     text-transform: capitalize;
     border-radius: 60px;
@@ -54,13 +49,8 @@ post .details .tag {
     align-items: center;
     margin-right: .5em;
 }
-post a {
-    margin: 0;
-    text-decoration: none !important;
-    cursor: pointer;
-}
 
-post .details .date {
+.post-details .date {
     font-size: 12px;
     color: #666;
 }
@@ -84,7 +74,14 @@ post img {
     width: 100%;
     height: 100%;
     transition: transform 0.3s ease-in-out;
+    object-fit: cover;
 }
 post img:hover {
     transform: translateY(-5px); /* Move the image upward by 5 pixels on hover */
+}
+caption {
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    margin-top: 12px;
 }

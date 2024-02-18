@@ -1,0 +1,15 @@
+{{ $posts := where .Site.RegularPages "Type" "posts"}}
+{{ $author := .Title }}
+
+
+<main class="container">
+    {{ partial "author" . }}
+    <hr>
+    <section class="list-posts-layout">
+        {{ range $posts }}
+            {{ if eq $author .Params.author }}
+                {{ partial "post" .Page }}
+            {{ end }}
+        {{ end }}
+    </section>
+</main>

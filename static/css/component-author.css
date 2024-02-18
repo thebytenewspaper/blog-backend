@@ -1,0 +1,63 @@
+author {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+author .meta {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+}
+author .bio {
+    max-width: 600px;
+}
+author .meta * {
+    margin-top: 0;
+    margin-right: 4px;
+}
+author .meta:last-child {
+    margin-right: 0;
+}
+author img {
+    border-radius: 50%;
+    width: 128px;
+    height: 128px;
+    margin-bottom: 16px;
+    transition: .2s;
+    object-fit: cover;
+}
+author img:hover {
+    transform: translateY(-5px); /* Move the image upward by 5 pixels on hover */
+}
+author .title {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+author * {
+    margin: 0;
+    margin-top: 12px;
+}
+
+author .group span {
+    display: flex;
+    justify-content: center;
+}
+author .group span a {
+    margin: 0 6px;
+    font-size: 24px;
+}
+
+/* HOW AUTHORS ARE DISPLAYED IN LIST GROUPS */
+
+.author-card {
+    background-color: var(--background-alt-color-2);
+    border-radius: var(--border-radius);
+    padding: 32px;
+}
+.author-card .socials, .author-card .joined {
+    display: none;
+}

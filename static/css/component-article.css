@@ -1,0 +1,37 @@
+/* <section class="article">
+<div class="article-header">
+  <div class="post-details">
+    <a href="/tags/{{ index .Page.Params.tags 0 | urlize }}" class="tag">{{ index .Page.Params.tags 0 }}</a>
+    <p class="date">• {{ .Date.Format "Jan 2, 2006" }}</p>
+  </div>
+  <h1>{{ .Title }}</h1>
+  <p>{{ .Summary }}</p>
+</div>
+<img src="{{ .Page.Params.cover }}" alt="">
+<article class="article-content">
+  {{ .Content }}
+</article>
+</section> */
+
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.article-header a {
+    text-decoration: none;
+}
+.article-header, .article-content {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 26px;
+}
+.article-header {
+    margin-top: 0;
+}
+.article .cover-image {
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 0 !important;
+}

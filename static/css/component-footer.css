@@ -5,7 +5,7 @@ footer {
     align-items: center;
     padding: 2rem 1rem;
     background-color: var(--background-alt-color-2);
-    margin-top: 1.4rem;
+    margin-top: 3.5rem;
 }
 footer p {
     margin: 0;
@@ -14,4 +14,7 @@ footer p {
 footer .group a {
     font-size: 26px;
     margin: 0 8px;
+}
+footer .scroll-feature {
+    cursor: pointer;
 }

@@ -17,12 +17,17 @@
     <link rel="stylesheet" href="{{ "css/root.css" | relURL }}">
     <link rel="stylesheet" href="{{ "css/resets.css" | relURL }}">
     <link rel="stylesheet" href="{{ "css/defaults.css" | relURL }}">
-    <link rel="stylesheet" href="{{ "css/layouts.css" | relURL }}">
-
+    
     <link rel="stylesheet" href="{{ "css/component-post.css" | relURL }}">
     <link rel="stylesheet" href="{{ "css/component-footer.css" | relURL }}">
     <link rel="stylesheet" href="{{ "css/component-header.css" | relURL }}">
     <link rel="stylesheet" href="{{ "css/component-category-layouts.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/component-article.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/component-author.css" | relURL }}">
+    
+    <link rel="stylesheet" href="{{ "css/staff-style-overides.css" | relURL }}">
+
+    <link rel="stylesheet" href="{{ "css/layouts.css" | relURL }}">
 
     <title>{{ .Page.Title }}</title>
 </head>
@@ -43,6 +48,15 @@
                 img.onerror = null
             }
         })
+    </script>
+    <script id="CAPTIONATE_ALL_ARTICLE_IMAGES">
+        const articleImages = Array.from(document.querySelectorAll('.article-content img'))
+        articleImages.forEach(img => {
+            const caption = document.createElement('caption');
+            caption.innerText = img.getAttribute('alt')
+
+            img.insertAdjacentElement('afterend', caption);
+        });
     </script>
 </body>
 </html>

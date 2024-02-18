@@ -16,6 +16,9 @@ header ul {
     margin: 0;
     display: flex;
 }
+header ul .desktop-hidden {
+    display: none;
+}
 header ul li {
     display: inline-block;
 }
@@ -121,10 +124,13 @@ header .cta:hover, header .cta:active {
         flex-direction: column;
         padding: 1rem;
         text-align: right;
-        top: 4rem;
+        top: 5rem;
         right: 26px;
         z-index: 90;
         display: none;
+    }
+    header ul .desktop-hidden {
+        display: block;
     }
     header ul li {
         margin: 4px 0;

@@ -1,16 +1,11 @@
 ---
-title: "You die for me to live – going in depth on the cruelties animals face"
+title: "You die for me to live – the cruelties animals face"
 date: '2020-09-10'
-draft: false
 description: 'What we’re doing to them is so wrong. It’s inhumane. Why do we slaughter in the millions every day to sustain the way we live.'
 author: 'Akrit Ghimire'
 cover: 'https://blogs.glowscotland.org.uk/gc/public/rosshallrecords/uploads/sites/11107/2020/11/10181348/3D201842-ADBE-4E63-8DFF-A8D1A956C262.jpeg'
-tags: ['animal cruelty', 'featured']
-theme: 'light'
+tags: ['society', 'featured']
 ---
-
-![cover image](https://blogs.glowscotland.org.uk/gc/public/rosshallrecords/uploads/sites/11107/2020/11/10181348/3D201842-ADBE-4E63-8DFF-A8D1A956C262.jpeg)
-
 We live in a vast, beautiful world teeming with life – Intelligent life. We are the most intelligent beings in our world. Does this make it right for us to be cruel to less intelligent life forms? Why must intelligent animals die in order for us to live?
 
 Last year, around 6.4 billion land animals and sea creatures were killed in the uk for food. Around 70 billion land animals were killed for food globally in total last year. But, why worry, these animals live on bright grassy and sunny farms and enjoy life before they die? That could not be any further from the truth. Pretty much all our meat comes from factory farms, not the happy, grassy farms we normally associate where our food comes from. But what are factory farms?

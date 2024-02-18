@@ -1,0 +1,11 @@
+<main class="container">
+    <h1 style="text-transform: capitalize;">{{ .Title }}</h1>
+    <blockquote style="font-style: normal;">{{ .Params.description }}</blockquote>
+    <hr>
+    <section class="list-posts-layout staff">
+        {{ range .Pages }}
+            {{ partial "post" .Page }}
+        {{ end }}
+    </section>
+    <hr>
+</main>

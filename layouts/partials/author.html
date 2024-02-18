@@ -1,0 +1,33 @@
+{{ $posts := where .Site.RegularPages "Type" "posts"}}
+{{ $author := .Page.Title }}
+{{ $postsCount := 0 }}
+
+{{ range $posts }}
+    {{ if eq $author .Params.author }}
+        {{ $postsCount = add $postsCount 1 }}
+    {{ end }}
+{{ end }}
+
+<author>
+    <a href="/authors/{{ .Page.Title | urlize }}" style="margin-top: 0;"><img src="{{ .Page.Params.profile }}" alt=""></a>
+    <a href="/authors/{{ .Page.Title | urlize }}" class="title">{{ .Page.Title }}</a>
+    <p class="bio">{{ .Page.Params.description | truncate 250 }}</p>
+    <div class="group">
+        <div class="meta">
+            <em style="font-style: normal; text-transform: capitalize;">{{ .Page.Params.role }} </em>
+            <div class="joined">• Joined {{ .Page.Date.Format "Jan 2, 2006" }}</div>
+            <div>• <a href="/authors/{{ .Page.Title | urlize }}">{{ $postsCount }} {{ if eq $postsCount 1 }}post{{ else }}posts{{ end }}</a></div>
+        </div>
+        <span class="socials">
+            {{ if .Page.Params.instagram }}
+                <a href="{{ .Page.Params.instagram }}"><i class="ion-logo-instagram"></i></a>
+            {{ end }}
+            {{ if .Page.Params.twitter }}
+                <a href="{{ .Page.Params.twitter }}"><i class="ion-logo-twitter"></i></a>
+            {{ end }}
+            {{ if .Page.Params.email }}
+                <a href="{{ .Page.Params.email }}"><i class="ion-md-mail"></i></a>
+            {{ end }}
+        </span>
+    </div>
+</author>

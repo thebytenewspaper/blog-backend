@@ -1,0 +1,10 @@
+<main class="container">
+    <h1>Authors</h1>
+    <section class="list-posts-layout">
+        {{ range .Pages }}
+            <div class="author-card">
+                {{ partial "author" .Page }}
+            </div>
+        {{ end }}
+    </section>
+</main>

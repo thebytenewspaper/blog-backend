@@ -1,0 +1,17 @@
+.staff post .wrapper {
+    display: none;
+}
+.staff post {
+    background-color: var(--background-alt-color-2);
+    border-radius: var(--border-radius);
+    padding: 32px
+}
+.staff post .post-details {
+    display: none;
+}
+.staff h2 {
+    margin: 0;
+}
+.staff .authors {
+    display: none;
+}
