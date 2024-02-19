@@ -1,3 +1,9 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 /* Homepage Headline */
 
 hero {
@@ -112,6 +118,7 @@ hero p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--layout-gap);
+    margin-bottom: 32px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -129,8 +136,8 @@ hero p {
 /* DANTO Page Container Styles */
 .container {
     margin: 0 auto;
-}
-.container {
+    display: flex;
+    flex-direction: column;
     max-width: 1332px;
     padding-left: 36px;
     padding-right: 36px;
@@ -155,5 +162,18 @@ hero p {
     .article-header, .article-content {
         max-width: 500px;
     }
+}
+
+/* 404 and similar pages */
+.single-page-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.single-page-layout * {
+    margin-bottom: 32px;
+    margin-top: 0;
 }
 

@@ -24,12 +24,14 @@
     <link rel="stylesheet" href="{{ "css/component-category-layouts.css" | relURL }}">
     <link rel="stylesheet" href="{{ "css/component-article.css" | relURL }}">
     <link rel="stylesheet" href="{{ "css/component-author.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/component-like-widget.css" | relURL }}">
     
     <link rel="stylesheet" href="{{ "css/staff-style-overides.css" | relURL }}">
 
     <link rel="stylesheet" href="{{ "css/layouts.css" | relURL }}">
 
-    <title>{{ .Page.Title }}</title>
+    <title>{{ .Page.Title | title }} | The Byte</title>
+    <link rel="icon" type="image/png" href="/icon.svg">
 </head>
 <body>
     {{ partial "header" }}

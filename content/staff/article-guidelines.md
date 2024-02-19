@@ -2,9 +2,6 @@
 title: "The Byte: Article Guidelines"
 date: '2024-02-18'
 description: 'This is a brief page on what should be included of each article for The Byte'
-cover: ''
-author: 'Management'
-tags: ['staff']
 ---
 Every article **must have**:
 - a chosen title

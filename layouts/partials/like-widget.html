@@ -1,0 +1,19 @@
+<like-widget>
+    <p><em>Did you like this article?</em> Send the author a like!</p>
+    <a onclick="send_like(this, '{{ .Permalink }}')"><i class="ion-ios-heart-empty"></i><p><span id="POST_LIKES"></span> likes</p></a>
+    <script id="GET_POST_LIKE_COUNT">
+        const post_likes_element = document.getElementById('POST_LIKES')
+        const get_post_likes = (post_url) => {
+            return 0
+        }
+        post_likes_element.innerText = get_post_likes('{{ .Permalink }}')
+    </script>
+    <script id="LIKE_A_POST">
+        const send_like = (like_elem, post_url) => {
+            const heart = like_elem.querySelector('i')
+            heart.classList.remove('ion-ios-heart-empty')
+            heart.classList.add('ion-ios-heart')
+            console.log(post_url)
+        }
+    </script>
+</like-widget>

@@ -2,9 +2,6 @@
 title: "About Us"
 date: '2024-02-18'
 description: 'This is a brief page about what The Byte is and what we do here.'
-cover: ''
-author: 'Management'
-tags: ['staff']
 ---
 Welcome to The Byte, your go-to destination for all things informatics! As a newspaper and blog website run by informatics students, we're dedicated to providing a dynamic platform where you can explore the latest developments, insights, and stories in the world of informatics.
 

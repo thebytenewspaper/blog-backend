@@ -34,7 +34,7 @@ header ul li a:hover, header ul li a:active {
     text-decoration-thickness: 1px;
     text-underline-offset: 2px;
 }
-header .cta {
+.cta {
     margin-left: auto;
     background-color: var(--primary-color);
     color: var(--dark);
@@ -47,7 +47,7 @@ header .cta {
     transition: .2s;
     font-size: 16px;
 }
-header .cta:hover, header .cta:active {
+.cta:hover, header .cta:active {
     opacity: .8;
 }
 

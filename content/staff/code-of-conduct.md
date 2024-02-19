@@ -2,9 +2,6 @@
 title: "The Byte: Code of Conduct"
 date: '2024-02-18'
 description: 'This is a quick page of the Code of Conduct at The Byte'
-cover: ''
-author: 'Management'
-tags: ['staff']
 ---
 As members of The Byte community, we strive to uphold the values of integrity, respect, and authenticity in all our endeavors. Our code of conduct serves as a guiding framework to ensure that every article published on our platform reflects these principles and contributes positively to our community. Below are the conduct guidelines we adhere to:
 

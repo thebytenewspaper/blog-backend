@@ -2,9 +2,6 @@
 title: "The Byte: Peer Review Process"
 date: '2024-02-18'
 description: 'This is a brief page on the Peer Review process at The Byte'
-cover: ''
-author: 'Management'
-tags: ['staff']
 ---
 Once you feel your article is ready, it undergoes several checks:
 

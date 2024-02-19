@@ -2,9 +2,6 @@
 title: "Why be a writer for The Byte?"
 date: '2024-02-18'
 description: 'This is a brief page on why you should be a writer for The Byte'
-cover: ''
-author: 'Management'
-tags: ['staff']
 ---
 **Are you an informatics student with a passion for writing, coding, or investigative journalism?** Look no further than The Byte – your ultimate platform to showcase your talent, gain recognition, and connect with like-minded individuals.
 

@@ -1,0 +1,26 @@
+like-widget {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+like-widget em {
+    font-style: normal;
+}
+like-widget a {
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none !important;
+}
+like-widget a p {
+    font-size: 12px;
+    color: var(--text-font-color);
+    margin-bottom: 0;
+    margin-left: 8px;
+}
+like-widget p {
+    margin: 0;
+    margin-bottom: 8px;
+}
