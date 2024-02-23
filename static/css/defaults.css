@@ -126,7 +126,6 @@ blockquote {
     font-family: "Noto Serif", "Times New Roman", Georgia, serif;
     font-size: 30px;
     line-height: 1.6;
-    font-style: italic;
     border-left: 4px solid var(--primary-color);
     color: var(--heading-font-color)
 }

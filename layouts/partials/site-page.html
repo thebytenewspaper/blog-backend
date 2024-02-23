@@ -1,0 +1,10 @@
+<section class="article">
+    <div class="article-header">
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Params.description | truncate 250 }}</p>
+    </div>
+    <article class="article-content">
+        {{ .Content }}
+    </article>
+    </div>
+</section>

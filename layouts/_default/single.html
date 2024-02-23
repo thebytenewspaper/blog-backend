@@ -3,6 +3,8 @@
     {{ partial "author-bio" .Page }}
   {{ else if eq .Type "staff" }}
     {{ partial "staff-page" . }}
+  {{ else if eq .Type "pages" }}
+    {{ partial "site-page" . }}
   {{ else }}
     <!-- If Type Post then display the Article -->
     {{ partial "article" .Page }}

@@ -16,8 +16,8 @@ hero {
     max-width: 800px;
 }
 hero p {
-    width: 70%;
     margin: 0 auto;
+    max-width: 600px;
 }
 
 /* article 2 Posts Layout */
@@ -141,6 +141,7 @@ hero p {
     max-width: 1332px;
     padding-left: 36px;
     padding-right: 36px;
+    margin-bottom: auto;
 }
 
 @media (max-width: 1200px) {
